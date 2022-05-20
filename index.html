@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Unidad 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="col-10 col-md-7 mx-auto m-4 p-4">
+        <div class="input-group mb-3 d-flex flex-column flex-md-row">
+            <div class="col-xs-auto pb-2 col-md-6 pb-md-0 pe-md-3">
+                <label for="name" class="form-label">Nombre de pila</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="col-xs-auto col-md-6">
+                <label for="lastname" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastname">
+            </div>
+        </div>
+        <div>
+            <label for="userId" class="form-label">Nombre de usuario</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Nombre de usuario" id="userId">
+            </div>
+        </div>
+
+
+        <div>
+            <div>
+                <label for="mail" class="form-label" disabled>Correo electrónico <span>(opcional)</span></label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="you@example.com" id="mail">
+                </div>
+            </div>
+            <div>
+                <label for="adress1" class="form-label">Habla a</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="1234 Main St" id="adress1">
+                </div>
+            </div>
+            <div>
+                <label for="adress2" class="form-label">Dirección 2 <span>(opcional)</span></label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Apartamento o suite" id="adress2">
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between pb-4">
+                <div class="col-xs-auto col-md-5">
+                    <label for="country" class="form-label">País</label>
+                    <select class="form-select form-select-mb" id="country">
+                        <option selected>Escoger...</option>
+                        <option value="1">Argentina</option>
+                        <option value="2">Otro</option>
+                    </select>
+                </div>
+                <div class="col-xs-auto py-2 col-md-4 py-md-0 px-md-3">
+                    <label for="state" class="form-label">Estado</label>
+                    <select class="form-select form-select-mb col-mb-4" id="state">
+                        <option selected>Escoger...</option>
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">C.A.B.A</option>
+                        <option value="3">Catamarca</option>
+                        <option value="4">Chaco</option>
+                        <option value="5">Chubut</option>
+                        <option value="6">Córdoba</option>
+                        <option value="7">Corrientes</option>
+                        <option value="8">Entre Ríos</option>
+                        <option value="9">Formosa</option>
+                        <option value="10">Jujuy</option>
+                        <option value="11">La Pampa</option>
+                        <option value="12">La Rioja</option>
+                        <option value="13">Mendoza</option>
+                        <option value="14">Misiones</option>
+                        <option value="15">Neuquén</option>
+                        <option value="16">Río Negro</option>
+                        <option value="17">Salta</option>
+                        <option value="18">San Juan</option>
+                        <option value="19">San Luis</option>
+                        <option value="20">Santa Cruz</option>
+                        <option value="21">Santa Fe</option>
+                        <option value="22">Santiago del Estero</option>
+                        <option value="23">Tierra del Fuego</option>
+                        <option value="25">Tucumán</option>
+                    </select>
+                </div>
+                <div class="col-xs-auto col-md-3">
+                    <label for="postalCode" class="form-label">Código postal</label>
+                    <input type="number" class="form-control col-2" id="postalCode">
+                </div>
+            </div>
+
+            <div class="form-check p-4" id="checkSection">
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="adress">
+                    <label class="form-check-label" for="adress">
+                        La dirección de envío es la misma que mi dirección de facturación.
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="saveInfo">
+                    <label class="form-check-label" for="saveInfo">
+                        Guarde esta infomación para la próxima vez.
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar formulario</button>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+section{
+    background-color: #F8F9FB;
+    border-radius: 5px;
+}
+
+span{
+    color: gray;
+}
+
+#checkSection{
+    border-top: 1px lightgray solid;
+}
